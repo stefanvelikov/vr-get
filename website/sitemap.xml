@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://vr-partners.eu</loc>
-  </url>
-  <url>
-    <loc>https://vr-partners.eu/#our-services</loc>
-  </url>
-  <url>
-    <loc>https://vr-partners.eu/#about-us</loc>
-  </url>
-  <url>
-    <loc>https://vr-partners.eu/resources/</loc>
-  </url>
-  <url>
-    <loc>https://vr-partners.eu/post/navigating-europes-roads</loc>
-  </url>
-  <url>
-    <loc>https://vr-partners.eu/privacy-policy</loc>
-  </url>
-  <url>
-    <loc>https://vr-partners.eu/imprint</loc>
-  </url>
-  <url>
     <loc>https://vr-partners.eu/</loc>
   </url>
   <url>
@@ -40,6 +19,6 @@
     <loc>https://vr-partners.eu/privacy-policy</loc>
   </url>
   <url>
-    <loc>https://vr-partners.eu/imprint</loc>
+    <loc>https://vr-partners.eu/impressum</loc>
   </url>
 </urlset>
