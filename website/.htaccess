@@ -6,17 +6,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 ErrorDocument 404 /404
 ErrorDocument 403 /404
-Redirect 301 /contact https://www.agota.studio/book-a-call
-Redirect 301 /pricing https://www.agota.studio/book-a-call
-Redirect 301 /with/kaufland https://www.agota.studio/book-a-call
-Redirect 301 /zeplin-to-webflow https://www.agota.studio/migration/zeplin-to-webflow
-Redirect 301 /sketch-to-webflow https://www.agota.studio/migration/sketch-to-webflow
-Redirect 301 /adobe-xd-to-webflow https://www.agota.studio/migration/adobe-xd-to-webflow
-Redirect 301 /resources/upvio-webflow-redevelopment https://www.agota.studio/case-study/upvio-webflow-redevelopment
-Redirect 301 /resources/webflow-seo-how-to-optimize-your-webflow-site-for-search-engines https://agota.studio/blog/webflow-seo-optimization
-Redirect 301 /resources/webflow-vs-wordpress-which-ones-right-for-your-business https://agota.studio/blog/webflow-vs-wordpress
-Redirect 301 /solutions/design https://agota.studio/solutions/web-design
-Redirect 301 /solutions/development https://agota.studio/solutions/webflow-development
+# Redirect 301 /contact https://www.agota.studio/book-a-call
 
 
 # Serve /work/index.html when /work is accessed
