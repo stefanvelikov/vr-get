@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /style-guide
 Allow: /
-Sitemap: https://agota.studio/sitemap.xml
+Sitemap: https://vr-partners.eu/sitemap.xml

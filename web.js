@@ -5,8 +5,8 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 
 // Configuration
-const processingDomain = 'https://agota-studio.webflow.io';
-const sitemapRealDomain = 'https://agota.studio';
+const processingDomain = 'https://vr-partners-staging.webflow.io';
+const sitemapRealDomain = 'https://vr-partners.eu';
 const sitemapUrl = `${processingDomain}/sitemap.xml`;
 const outputFolder = 'website';
 const sitemapFileName = 'sitemap.xml';
@@ -159,16 +159,9 @@ async function fixSitemapDomains() {
 
     // Define arrays for inclusion and exclusion
     const pathsToEnsureSlash = [
-      '/migration',
-      '/case-study',
-      '/blog'
+      '/resources'
     ];
     const pathsToExclude = [
-      '/with/kaufland',
-      '/#solutions',
-      '/solutions/webflow-apps#web-apps',
-      '/solutions',
-      '/solutions/webflow-apps'
     ];
 
     sitemapObj.urlset.url = sitemapObj.urlset.url.filter(urlObj => {
@@ -294,7 +287,7 @@ async function addLinksToSitemapAtTop(linksToAdd) {
 
 // Example usage
 const newLinks = [
-  'https://agota.studio'
+  'https://vr-partners.eu'
 ];
 
 
@@ -302,23 +295,13 @@ const newLinks = [
 
 
 const urlsToRemove = [
-  'https://agota.studio/',
-  'https://agota.studio/#solutions',
-  'https://agota.studio/solutions',
-  'https://agota.studio/solutions/webflow-apps',
-  'https://agota.studio/solutions/development#web-apps',
 ];
 
 // Main Process
 async function processSitemapAndResources() {
   await fetchSitemap();
-  await fetchResourceLinksAndUpdateSitemap('/blog', ['/blog']);
-  await fetchResourceLinksAndUpdateSitemap('/migration', ['/migration']);
-  await fetchResourceLinksAndUpdateSitemap('/case-study', ['/case-study']);
-  await fetchResourceLinksAndUpdateSitemap('/solutions', ['/solutions']);
-  moveAndRenameResourcesFile(outputFolder, 'blog.html', 'blog');
-  moveAndRenameResourcesFile(outputFolder, 'migration.html', 'migration');
-  moveAndRenameResourcesFile(outputFolder, 'case-study.html', 'case-study');
+  await fetchResourceLinksAndUpdateSitemap('/resources', ['/resources']);
+  moveAndRenameResourcesFile(outputFolder, 'resources.html', 'resources');
 
   await fixSitemapDomains();
   await removeExactUrlsFromSitemap(urlsToRemove);
