@@ -287,7 +287,6 @@ async function addLinksToSitemapAtTop(linksToAdd) {
 
 // Example usage
 const newLinks = [
-  'https://vr-partners.eu'
 ];
 
 
@@ -295,7 +294,10 @@ const newLinks = [
 
 
 const urlsToRemove = [
+  'https://vr-partners.eu/#our-services',
+  'https://vr-partners.eu/#about-us'
 ];
+
 
 // Main Process
 async function processSitemapAndResources() {
